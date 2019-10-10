@@ -3,7 +3,7 @@ package cse360assign2;
 /**
  * @Assignment: 2
  * @author Dana Lee
- * @Class: CSE 306
+ * @Class: CSE 360
  * This class changes and accesses a total. It also keeps track of the operations done to the total in a string.
  * 
  */
