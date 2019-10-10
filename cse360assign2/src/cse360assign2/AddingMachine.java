@@ -6,7 +6,6 @@ package cse360assign2;
  * @Class: CSE 306
  * This class changes and accesses a total. It also keeps track of the operations done to the total in a string.
  * 
- * 
  */
 public class AddingMachine {
 	private int total;
