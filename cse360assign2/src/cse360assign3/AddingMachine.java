@@ -42,7 +42,28 @@ public class AddingMachine {
 		total -= value;
 		history = history + " - " + value;
 	}
+	public void divide(int value) {
+		total = total/value;
+		history = "(" + history + ") / " + value;
+	}
 	
+	/**
+	 * 
+	 * @param value gets multiplied with total
+	 */
+	public void multiply(int value) {
+		total = total * value;
+		history = "(" + history + ") * " + value;
+	}
+	
+	/**
+	 * 
+	 * @param value is the power the total is raised to
+	 */
+	public void power(int value) {
+		total = (int) Math.pow(total, value);
+		history = "(" + history + ") ^ " + value;
+	}
 	/**
 	 * returns a string with operation history
 	 */
