@@ -1,15 +1,16 @@
 package cse360assign3;
 
 /**
- * @Assignment: 2
+ * @Assignment: 3
  * @author Dana Lee
  * @Class: CSE 360
- * This class changes and accesses a total. It also keeps track of the operations done to the total in a string.
+ * This class changes and accesses a total. It also keeps track of the operations done to the total in a string. It is extended by the 
+ * calculator class.
  * 
  */
 public class AddingMachine {
-	private int total;
-	private String history = "0";
+	protected int total;
+	protected String history = "0";
 	
 	/**
 	 * constructor, sets total to 0
@@ -42,28 +43,7 @@ public class AddingMachine {
 		total -= value;
 		history = history + " - " + value;
 	}
-	public void divide(int value) {
-		total = total/value;
-		history = "(" + history + ") / " + value;
-	}
 	
-	/**
-	 * 
-	 * @param value gets multiplied with total
-	 */
-	public void multiply(int value) {
-		total = total * value;
-		history = "(" + history + ") * " + value;
-	}
-	
-	/**
-	 * 
-	 * @param value is the power the total is raised to
-	 */
-	public void power(int value) {
-		total = (int) Math.pow(total, value);
-		history = "(" + history + ") ^ " + value;
-	}
 	/**
 	 * returns a string with operation history
 	 */
@@ -76,6 +56,7 @@ public class AddingMachine {
 	 */
 	public void clear() {
 		history = "0";
+		total = 0;
 	}
 	
 }
